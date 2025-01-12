@@ -26,7 +26,8 @@ resource "aws_internet_gateway" "abc-igw" {
 
 # create the new route table. which is the best practice 
 resource "aws_route_table" "abc-route-table" {
-    vpc_id = var.vpc-name[0].id
+    // vpc_id = var.vpc-name[0].id
+    vpc_id = var.vpc-name[0]
     route {
         cidr_block = "0.0.0.0/0"
         # gateway id is the IGW id

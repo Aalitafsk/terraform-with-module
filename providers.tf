@@ -2,29 +2,26 @@ terraform {
   required_version = "~> 1.8.4"
 
   required_providers {
-    demo-aws = {
+    aws = {
       source = "hashicorp/aws"
       version = "~> 3.21"
     }
-/*
-    demo_azure = {
-        source = ""
-        version = ""
-    }
-*/
   }
-    backend "s3" {
+
+  backend "s3" {
     bucket = "demo512"
-    key = "terraform/state.tfstate"
+    key    = "terraform/state.tfstate"
     region = "us-east-1"
   }
 }
 
-
-provider demo-aws {
+provider "aws" {
   profile = "default"
-  region = "us-east-1"
-  //access_key = "xyz"
-  //secret_key = "xyz"
-  alias = "aws_lab"
+  region  = "us-east-1"
+}
+
+provider "aws" {
+  alias   = "aws_lab"
+  profile = "default"
+  region  = "us-east-1"
 }

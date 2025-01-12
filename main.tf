@@ -15,7 +15,7 @@ module "subnets" {
     subnet_cidr_block = var.subnet-cidr-blocks
     AZ				  = var.AZ
     env				  = var.env
-    vpc-name		  = module.vpc.vpc-names[0]
+    vpc-name		  = module.vpc.vpc-names
     myip			  = var.myip
 }
 
