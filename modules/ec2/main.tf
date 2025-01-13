@@ -26,7 +26,7 @@ resource "aws_instance" "abc-ec2" {
     instance_type = var.ec2-type
 
     subnet_id = var.subnet[0]
-    vpc_security_group_ids = var.abc-sg // [aws_security_group.demo-sg.id]
+    vpc_security_group_ids = var.abc-sg[0] // [aws_security_group.demo-sg.id]
     availability_zone = var.AZ
 
     associate_public_ip_address = true

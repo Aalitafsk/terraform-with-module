@@ -4,7 +4,7 @@ module "ec2" {
     ec2-type     = var.ec2-type
     subnet       = [module.subnets.abc-subnet-1-pub.id]
     //subnet       = module.subnets.abc-subnet-1-pub
-    abc-sg       = module.subnets.abc-sg.name
+    abc-sg       = [module.subnets.abc-sg.id]
     AZ           = var.AZ
     env          = var.env
     entry-script = var.entry-script
