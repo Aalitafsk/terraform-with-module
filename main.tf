@@ -2,7 +2,7 @@ module "ec2" {
     source = "./modules/ec2"
     public-key-location = var.public-key-location
     ec2-type     = var.ec2-type
-    subnet       = module.subnets.abc-subnet-1-pub.id
+    subnet       = [module.subnets.abc-subnet-1-pub.id]
     //subnet       = module.subnets.abc-subnet-1-pub
     abc-sg       = module.subnets.abc-sg.name
     AZ           = var.AZ
