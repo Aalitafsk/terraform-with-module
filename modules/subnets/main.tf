@@ -45,7 +45,8 @@ resource "aws_route_table_association" "abc-rtb-subnet" {
 }
 
 resource "aws_security_group" "abc-sg" {
-    name = [demo-sg1]
+    # name = ["demo-sg1"]
+    name = "demo-sg1"
     vpc_id = var.vpc-name[0]
 
     ingress {
