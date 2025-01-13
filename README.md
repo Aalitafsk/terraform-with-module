@@ -1,6 +1,8 @@
 this is the trial one 
 
 sudo terraform apply --auto-approve
+sudo terraform destroy --auto-approve
+
 
 run this command in the terminal 
 ssh-keygen
