@@ -15,4 +15,5 @@ ssh-keygen
  # To destroy the all the resources first unmount all the volumes using the following command in the linux terminal of all the servers
  sudo umount /dev/xvdf 
 
- 
+ # now our next step is to take the snapshots/backup of the volumes in aws a/c 
+  
