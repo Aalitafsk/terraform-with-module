@@ -14,3 +14,5 @@ ssh-keygen
 
  # To destroy the all the resources first unmount all the volumes using the following command in the linux terminal of all the servers
  sudo umount /dev/xvdf 
+
+ now our next stage is to take the snapshot of the volumes 
