@@ -1,4 +1,4 @@
-this is the trial one 
+this is the trial
 
 sudo terraform apply --auto-approve
 sudo terraform destroy --auto-approve
